@@ -1,0 +1,32 @@
+name: dac
+channels:
+  - pytorch
+  - nvidia
+  - numba
+  - plotly
+  - anaconda
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch
+  - pytorch-cuda=11.6
+  - torchvision
+  - numpy
+  - scipy
+  - numba
+  - pillow
+  - scikit-learn
+  - matplotlib
+  - tqdm
+  - plotly
+  - pyyaml
+  - ffmpeg
+  - pip:
+    - opencv-python
+    - einops
+    - kornia==0.6.9
+    - open3d==0.16.0
+    - tabulate
+    - omegaconf

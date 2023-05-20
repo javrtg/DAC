@@ -1,0 +1,14 @@
+cfg_optim:
+    iters: 100
+    lr_a: 5e1
+    lr_s: 5e1
+    lr_pbias: 0
+    method: 'adam'
+
+cfg_acorr:
+    method_derivative: 'diff'
+    sigma_d: 1.0
+    truncation_d: 3.0
+    method_weighting: 'uniform'
+    sigma_w: 1.0
+    truncation_w: 3.0

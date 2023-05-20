@@ -1,0 +1,14 @@
+cfg_optim:
+    iters: 500
+    lr_a: 0.05
+    lr_s: 1.5
+    lr_pbias: 0
+    method: 'sgd'
+
+cfg_acorr:
+    method_derivative: 'sobel'
+    sigma_d: 1.0
+    truncation_d: 3.0
+    method_weighting: 'gaussian'
+    sigma_w: 1.0
+    truncation_w: 3.0
