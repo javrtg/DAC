@@ -1,4 +1,6 @@
 # DAC: Detector-Agnostic Spatial Covariances for Deep Local Features
+### [Paper](https://arxiv.org/pdf/2305.12250.pdf)
+<br>
 
 > DAC: Detector-Agnostic Spatial Covariances for Deep Local Features <br>
 > Javier Tirado-Garín, Frederik Warburg, Javier Civera
@@ -135,6 +137,18 @@ Absolute paths for each dataset can be modified in [`datasets/settings.py`](data
     ```
 
     Results will be saved in `experiments/geometry/models/benchmarks/results`
+
+
+## BibTex
+If you find this code useful, please cite the following paper.
+```bibtex
+@article{tirado2023dac,
+  title={DAC: Detector-Agnostic Spatial Covariances for Deep Local Features},
+  author={Tirado-Gar{\'i}n, Javier and Warburg, Frederik and Civera, Javier},
+  journal={arXiv preprint arXiv:2305.12250},
+  year={2023}
+}
+```
 
 
 ## License and Acknowledgements
