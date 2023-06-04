@@ -75,8 +75,8 @@ class Keynet(BaseDetector):
         self.return_heatmaps = cfg['return_heatmaps']
 
         # use cuda or cpu
-        # self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        self.device = 'cpu'
+        self.device = torch.device(
+            'cuda' if torch.cuda.is_available() else 'cpu')
 
         # load detector system
         keynet_model = KeyNet(
@@ -136,8 +136,8 @@ class Keynet(BaseDetector):
         levels = pyramid_levels + up_levels + 1
         for idx_level in range(levels):
             tmp += factor_points ** (-1 * (idx_level - up_levels))
-            point_level.append(num_points * factor_points
-                               ** (-1 * (idx_level - up_levels)))
+            point_level.append(num_points * factor_points **
+                               (-1 * (idx_level - up_levels)))
         point_level = np.asarray(
             list(map(lambda x: int(x / tmp), point_level)))
 
@@ -294,8 +294,8 @@ def extract_ms_feats(
                 else:
                     descs = np.empty((0, 128))
             else:
-                sel_patches = patches[batch_size_desc *
-                                      i_patches:batch_size_desc * (i_patches + 1)]
+                sel_patches = patches[batch_size_desc
+                                      * i_patches:batch_size_desc * (i_patches + 1)]
                 if len(sel_patches) > 0:
                     descs_tmp = desc_model(sel_patches.to(device))
                 else:
