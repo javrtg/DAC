@@ -100,7 +100,7 @@ class Superpoint(BaseDetector):
     }
 
     def _init(self, cfg):
-        self.cuda = cfg['cuda']
+        self.cuda = torch.cuda.is_available() and cfg['cuda']
         self.nms_dist = cfg['nms_dist']
         self.conf_thresh = cfg['conf_thresh']
         self.cell = 8  # Size of each output cell. Keep this fixed.
