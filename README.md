@@ -142,7 +142,7 @@ Absolute paths for each dataset can be modified in [`datasets/settings.py`](data
 ## BibTex
 If you find this code useful, please cite the following paper.
 ```bibtex
-@article{tirado2023dac,
+@inproceedings{tirado2023dac,
   title={DAC: Detector-Agnostic Spatial Covariances for Deep Local Features},
   author={Tirado-Gar{\'i}n, Javier and Warburg, Frederik and Civera, Javier},
   booktitle={International Conference on 3D Vision (3DV)},
