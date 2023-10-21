@@ -3,7 +3,8 @@
 <br>
 
 > DAC: Detector-Agnostic Spatial Covariances for Deep Local Features <br>
-> Javier Tirado-Garín, Frederik Warburg, Javier Civera
+> Javier Tirado-Garín, Frederik Warburg, Javier Civera <br>
+> 3DV 2024
 
 ## Setup
 
