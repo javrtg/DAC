@@ -145,8 +145,8 @@ If you find this code useful, please cite the following paper.
 @article{tirado2023dac,
   title={DAC: Detector-Agnostic Spatial Covariances for Deep Local Features},
   author={Tirado-Gar{\'i}n, Javier and Warburg, Frederik and Civera, Javier},
-  journal={arXiv preprint arXiv:2305.12250},
-  year={2023}
+  booktitle={International Conference on 3D Vision (3DV)},
+  year={2024}
 }
 ```
 
